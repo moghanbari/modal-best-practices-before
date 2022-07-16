@@ -4,10 +4,12 @@ const Modal = ({ show, onCloseButtonClick }) => {
   }
 
   return (
-    <div className='modal-wrapper'>
-      <div className='modal'>
-        <div className='body'>Click on the close button to close the modal.</div>
-        <div className='footer'>
+    <div className="modal-wrapper">
+      <div className="modal">
+        <div className="body">
+          Click on the close button to close the modal.
+        </div>
+        <div className="footer">
           <button onClick={onCloseButtonClick}>Close Modal</button>
         </div>
       </div>
