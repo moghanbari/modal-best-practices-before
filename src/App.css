@@ -46,7 +46,6 @@ body {
   text-align: center;
   text-transform: uppercase;
   transform: translateZ(0);
-  transition: filter 0.2s;
   user-select: none;
   -webkit-user-select: none;
   width: 200px;
@@ -89,7 +88,7 @@ body {
   border: 1px solid rgb(179, 179, 179);
   border-radius: 15px;
   overflow: hidden;
-  margin-bottom: 150px;
+  margin: 0 15px 160px;
 }
 
 .modal .footer {

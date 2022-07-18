@@ -5,18 +5,14 @@ import './App.css';
 function App() {
   const [showModal, setShowModal] = useState(false);
 
-  const openModal = () => {
-    setShowModal(true);
-  }
-
-  const closeModal = () => {
-    setShowModal(false);
+  const toggleShowModal = () => {
+    setShowModal(!showModal);
   }
 
   return (
     <div className="App">
-      <Modal show={showModal} onCloseButtonClick={closeModal} />
-      <div className="button" onClick={openModal}>Open Modal</div>
+      <Modal show={showModal} onCloseButtonClick={toggleShowModal} />
+      <div className="button" onClick={toggleShowModal}>Open Modal</div>
     </div>
   );
 }
